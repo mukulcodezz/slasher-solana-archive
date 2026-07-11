@@ -1,7 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
-import Script from "next/script";
 import Header from "@/components/header";
+import LaunchMyNftEmbed from "@/components/launchmynft-embed";
 import nfts from "@/components/nfts.json";
 import NftCard from "@/components/nft-card";
 import { Tag, INFTItem, ALL_TAGS } from "@/components/types";
@@ -30,32 +30,11 @@ export default function Collection() {
     return (
         <div className="flex items-start w-screen max-w-[1440px] h-screen flex-col">
             <Header />
-            <Script id="lmnft-embed-loader" strategy="afterInteractive">
-                {`
-                    window.ownerId = "W8gE2HUE5DRmKAqWbGUkAJJ3m1hHoyUdJvvwgujZxTX";
-                    window.collectionId = "L3v0yGVOEkmz8YFS8w1x";
-
-                    if (!document.getElementById('lmnft-solana-script')) {
-                        var link = document.createElement('link');
-                        link.rel = 'stylesheet';
-                        link.href = 'https://storage.googleapis.com/scriptslmt/0.1.3/solana.css';
-                        document.head.appendChild(link);
-
-                        var script = document.createElement('script');
-                        script.id = 'lmnft-solana-script';
-                        script.type = 'module';
-                        script.src = 'https://storage.googleapis.com/scriptslmt/0.1.3/solana.js';
-                        document.body.appendChild(script);
-                    }
-                `}
-            </Script>
 
             <div className="flex w-full h-full pt-[80px] gap-[80px] mt-[80px] flex-col items-center justify-center mb-[80px]">
                 <div className="flex flex-col items-center gap-[16px]">
                     <p className="text-black text-[40px] font-medium text-center">Collections</p>
-
-                    <div id="mint-counter" />
-                    <div id="mint-button-container" />
+                    <LaunchMyNftEmbed />
                 </div>
 
                 <div className="flex flex-col md:flex-row max-w-[1066px] w-full gap-[25px] md:gap-[63px] h-full justify-center w-fit">
@@ -87,8 +66,6 @@ export default function Collection() {
                                 name={v.name}
                                 tags={v.tags}
                                 mintAmount={v.price}
-                                nft={v}
-                                onMintClick={() => {}}
                             />
                         ))}
                     </div>
