@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Arthouse slash",
+    "image": "/nft/slash_001.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Single", "Dark"]
+  },
+  {
+    "name": "Car slash",
+    "image": "/nft/slash_014.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Single", "Light"]
+  },
+  {
+    "name": "Cubanoid slash",
+    "image": "/nft/slash_015.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Double", "Light"]
+  },
+  {
+    "name": "Font slash",
+    "image": "/nft/slash_016.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Single", "Light"]
+  },
+  {
+    "name": "Plastic slash",
+    "image": "/nft/slash_017.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Double", "Dark"]
+  },
+  {
+    "name": "Wood slash",
+    "image": "/nft/slash_018.png",
+    "price": 0.15,
+    "tags": ["Legendary", "Single", "Light"]
+  },
+  {
+    "name": "Blueprint slash",
+    "image": "/nft/slash_002.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Dark"]
+  },
+  {
+    "name": "Blueprint slash",
+    "image": "/nft/slash_003.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Dark"]
+  },
+  {
+    "name": "Blueprint slash",
+    "image": "/nft/slash_004.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Light"]
+  },
+  {
+    "name": "Blueprint slash",
+    "image": "/nft/slash_005.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Light"]
+  },
+  {
+    "name": "Classwork slash",
+    "image": "/nft/slash_006.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Dark"]
+  },
+  {
+    "name": "Classwork slash",
+    "image": "/nft/slash_007.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Dark"]
+  },
+  {
+    "name": "Classwork slash",
+    "image": "/nft/slash_008.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Light"]
+  },
+  {
+    "name": "Classwork slash",
+    "image": "/nft/slash_009.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Light"]
+  },
+  {
+    "name": "Mosaic slash",
+    "image": "/nft/slash_010.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Dark"]
+  },
+  {
+    "name": "Mosaic slash",
+    "image": "/nft/slash_011.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Dark"]
+  },
+  {
+    "name": "Mosaic slash",
+    "image": "/nft/slash_012.png",
+    "price": 0.10,
+    "tags": ["Rare", "Double", "Light"]
+  },
+  {
+    "name": "Mosaic slash",
+    "image": "/nft/slash_013.png",
+    "price": 0.10,
+    "tags": ["Rare", "Single", "Light"]
+  },
+  {
+    "name": "Dark double slash 1",
+    "image": "/nft/slash_020.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark double slash 2",
+    "image": "/nft/slash_021.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark double slash 3",
+    "image": "/nft/slash_022.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark double slash 4",
+    "image": "/nft/slash_023.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark double slash 5",
+    "image": "/nft/slash_024.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark double slash 6",
+    "image": "/nft/slash_025.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Dark"]
+  },
+  {
+    "name": "Dark slash 1",
+    "image": "/nft/slash_030.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Dark slash 2",
+    "image": "/nft/slash_031.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Dark slash 3",
+    "image": "/nft/slash_032.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Dark slash 4",
+    "image": "/nft/slash_033.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Dark slash 5",
+    "image": "/nft/slash_034.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Dark slash 6",
+    "image": "/nft/slash_035.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Dark"]
+  },
+  {
+    "name": "Light slash 1",
+    "image": "/nft/slash_040.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light slash 2",
+    "image": "/nft/slash_041.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light slash 3",
+    "image": "/nft/slash_042.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light slash 4",
+    "image": "/nft/slash_043.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light slash 5",
+    "image": "/nft/slash_044.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light slash 6",
+    "image": "/nft/slash_045.png",
+    "price": 0.05,
+    "tags": ["Common", "Single", "Light"]
+  },
+  {
+    "name": "Light double slash 1",
+    "image": "/nft/slash_050.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  },
+  {
+    "name": "Light double slash 2",
+    "image": "/nft/slash_051.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  },
+  {
+    "name": "Light double slash 3",
+    "image": "/nft/slash_052.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  },
+  {
+    "name": "Light double slash 4",
+    "image": "/nft/slash_053.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  },
+  {
+    "name": "Light double slash 5",
+    "image": "/nft/slash_054.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  },
+  {
+    "name": "Light double slash 6",
+    "image": "/nft/slash_055.png",
+    "price": 0.05,
+    "tags": ["Common", "Double", "Light"]
+  }
+]
