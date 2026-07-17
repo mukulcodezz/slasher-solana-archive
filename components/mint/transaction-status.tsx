@@ -2,7 +2,7 @@ import type { MintPreviewStatus } from "@/types/project";
 
 const LIFECYCLE = [
   "Preparing instruction",
-  "Requesting signature",
+  "Signature preview",
   "Submitting to Solana",
   "Awaiting confirmation",
   "Reading minted asset",

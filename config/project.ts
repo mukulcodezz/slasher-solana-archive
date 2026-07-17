@@ -6,19 +6,9 @@ export const projectConfig: ProjectConfig = {
   description: "A finite archive of 42 diagonal mark studies designed for Solana.",
   supply: Number(process.env.NEXT_PUBLIC_TOTAL_SUPPLY ?? 42),
   priceSol: Number(process.env.NEXT_PUBLIC_MINT_PRICE_SOL ?? 0.05),
-  maxMint: 5,
+  maxMint: 3,
   cluster: process.env.NEXT_PUBLIC_SOLANA_NETWORK === "mainnet-beta" ? "mainnet-beta" : "devnet",
   rpcUrl: process.env.NEXT_PUBLIC_SOLANA_RPC_URL ?? "https://api.devnet.solana.com",
-  collectionAddress: process.env.NEXT_PUBLIC_COLLECTION_ADDRESS ?? "",
-  mintProgramAddress: process.env.NEXT_PUBLIC_MINT_PROGRAM_ADDRESS ?? "",
-  treasuryAddress: "",
-  royaltyPercent: 5,
-  featureFlags: {
-    demoMode: true,
-    mintEnabled: false,
-    allowlistEnabled: false,
-    aiAssistantEnabled: false,
-  },
   roadmap: [
     {
       code: "CALIBRATION",

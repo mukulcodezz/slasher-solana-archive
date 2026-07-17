@@ -4,7 +4,6 @@ export interface MintPreviewState {
   status: MintPreviewStatus;
   quantity: number;
   termsAccepted: boolean;
-  signature?: undefined;
 }
 
 export type MintPreviewEvent =
@@ -21,7 +20,6 @@ export const initialMintPreviewState: MintPreviewState = {
   status: "ready",
   quantity: 1,
   termsAccepted: false,
-  signature: undefined,
 };
 
 export function mintPreviewReducer(state: MintPreviewState, event: MintPreviewEvent): MintPreviewState {
@@ -42,7 +40,7 @@ export function mintPreviewReducer(state: MintPreviewState, event: MintPreviewEv
     return { ...state, status: "signature-preview" };
   }
   if (event.type === "ADVANCE" && state.status === "signature-preview") {
-    return { ...state, status: "complete-preview", signature: undefined };
+    return { ...state, status: "complete-preview" };
   }
   return state;
 }

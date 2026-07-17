@@ -21,7 +21,7 @@ export function MintInstrument() {
       <div className="mint-instrument__art">
         <Image alt="SLASHER registration preview artwork" fill priority sizes="(max-width: 768px) 100vw, 50vw" src="/nft/slash_001.png" />
         <div className="mint-instrument__art-meter">
-          <GlassMeter display="42" label="Total supply" tone="signal" value={82} />
+          <GlassMeter display={String(projectConfig.supply)} label="Total supply" tone="signal" value={82} />
         </div>
       </div>
 

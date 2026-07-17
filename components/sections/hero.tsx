@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GlassMeter } from "@/components/meters/glass-meter";
+import { projectConfig } from "@/config/project";
 
 export function Hero() {
   return (
@@ -23,7 +24,7 @@ export function Hero() {
           src="/images/slasher-banner.png"
         />
         <div className="hero__meter">
-          <GlassMeter display="42" label="Finite supply" tone="signal" value={82} />
+          <GlassMeter display={String(projectConfig.supply)} label="Finite supply" tone="signal" value={82} />
         </div>
       </div>
     </section>

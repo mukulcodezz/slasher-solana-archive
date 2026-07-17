@@ -21,7 +21,7 @@ export function MintPreviewPanel() {
           <div><dt>Network</dt><dd>Solana devnet</dd></div>
           <div><dt>Program</dt><dd>Not connected</dd></div>
         </dl>
-        <GlassMeter display="0 / 42" label="Registered" orientation="horizontal" value={0} />
+        <GlassMeter display={`0 / ${projectConfig.supply}`} label="Registered" orientation="horizontal" value={0} />
       </div>
       <p className="demo-disclosure">Preview mode - mint program not connected.</p>
     </section>

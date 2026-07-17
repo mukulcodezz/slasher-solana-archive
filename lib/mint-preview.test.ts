@@ -17,15 +17,13 @@ describe("mintPreviewReducer", () => {
       .toBe(3);
   });
 
-  it("finishes only as a preview without a signature", () => {
+  it("finishes only as a preview", () => {
     const ready = { ...initialMintPreviewState, termsAccepted: true };
     const preparing = mintPreviewReducer(ready, { type: "START", walletConnected: true });
     const signaturePreview = mintPreviewReducer(preparing, { type: "ADVANCE" });
     const completePreview = mintPreviewReducer(signaturePreview, { type: "ADVANCE" });
 
-    expect(completePreview).toEqual(expect.objectContaining({
-      status: "complete-preview",
-      signature: undefined,
-    }));
+    expect(completePreview.status).toBe("complete-preview");
+    expect(completePreview).not.toHaveProperty("signature");
   });
 });

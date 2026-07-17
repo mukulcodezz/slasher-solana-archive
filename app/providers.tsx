@@ -2,11 +2,12 @@
 
 import type { CreateDefaultClientOptions } from "@solana/client";
 import { SolanaProvider } from "@solana/react-hooks";
+import { projectConfig } from "@/config/project";
 
 const solanaConfig: CreateDefaultClientOptions = {
-  cluster: "devnet",
-  rpc: process.env.NEXT_PUBLIC_SOLANA_RPC_URL ?? "https://api.devnet.solana.com",
-  websocket: "wss://api.devnet.solana.com",
+  cluster: projectConfig.cluster,
+  rpc: projectConfig.rpcUrl,
+  websocket: projectConfig.cluster === "mainnet-beta" ? "wss://api.mainnet-beta.solana.com" : "wss://api.devnet.solana.com",
   walletConnectors: "default",
 };
 

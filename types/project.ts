@@ -58,16 +58,6 @@ export interface ProjectConfig {
   maxMint: number;
   cluster: SolanaCluster;
   rpcUrl: string;
-  collectionAddress: string;
-  mintProgramAddress: string;
-  treasuryAddress: string;
-  royaltyPercent: number;
-  featureFlags: {
-    demoMode: boolean;
-    mintEnabled: boolean;
-    allowlistEnabled: boolean;
-    aiAssistantEnabled: boolean;
-  };
   roadmap: RoadmapStage[];
   utilities: UtilityModule[];
 }
