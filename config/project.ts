@@ -1,8 +1,8 @@
 import type { ProjectConfig } from "@/types/project";
 
 export const projectConfig: ProjectConfig = {
-  name: "NULL/FORM",
-  tagline: "Objects recorded on Solana",
+  name: "NTH/OBJECT",
+  tagline: "Finite objects. Public state.",
   description: "A finite archive of designed digital objects, registered as inspectable Solana assets.",
   supply: Number(process.env.NEXT_PUBLIC_TOTAL_SUPPLY ?? 3333),
   priceSol: Number(process.env.NEXT_PUBLIC_MINT_PRICE_SOL ?? 1.25),

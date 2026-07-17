@@ -20,8 +20,8 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link className="wordmark" href="/" aria-label="NULL/FORM home">
-          NULL<span>/</span>FORM
+        <Link className="wordmark" href="/" aria-label="NTH/OBJECT home">
+          NTH<span>/</span>OBJECT
         </Link>
 
         <nav aria-label="Primary navigation" className="site-header__nav">
@@ -59,7 +59,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <div className="mobile-navigation__meta">
-            <span>Objects recorded on Solana</span>
+            <span>Finite objects. Public state.</span>
             <span>Preview environment</span>
           </div>
         </nav>

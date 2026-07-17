@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer__lead">
-        <Link className="wordmark wordmark--footer" href="/">NULL<span>/</span>FORM</Link>
+        <Link className="wordmark wordmark--footer" href="/">NTH<span>/</span>OBJECT</Link>
         <p>A finite archive of designed digital objects.</p>
       </div>
       <div className="site-footer__grid">
@@ -35,7 +35,7 @@ export function SiteFooter() {
       </div>
       <div className="site-footer__warning">
         <span>Always verify the official collection address before signing a transaction.</span>
-        <span>© 2026 NULL/FORM</span>
+        <span>© 2026 NTH/OBJECT</span>
       </div>
     </footer>
   );

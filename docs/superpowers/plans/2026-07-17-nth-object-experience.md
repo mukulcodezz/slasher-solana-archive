@@ -1,8 +1,8 @@
-# NULL/FORM Experience Implementation Plan
+# NTH/OBJECT Experience Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Rebuild the existing Next.js NFT site as the premium NULL/FORM digital sculpture archive with real transaction-free Solana wallet connection and an honest demo mint experience.
+**Goal:** Rebuild the existing Next.js NFT site as the premium NTH/OBJECT digital sculpture archive with real transaction-free Solana wallet connection and an honest demo mint experience.
 
 **Architecture:** Keep content and configuration in typed server-safe modules, isolate browser behavior in focused client components, and place Solana APIs behind a project-owned wallet view model. Render the visual system primarily with React, CSS, local imagery, and SVG; use a pure reducer for demo minting so it cannot acquire transaction capabilities accidentally.
 
@@ -10,7 +10,7 @@
 
 ## Global Constraints
 
-- Product name: `NULL/FORM`; tagline: `Objects recorded on Solana`.
+- Product name: `NTH/OBJECT`; tagline: `Finite objects. Public state.`
 - Palette: warm off-white `#f0eee7`, carbon black `#10100f`, graphite `#5d5d57`, fogged glass, and signal green only for live/connected states.
 - Minting is always a simulation and must display `Preview mode — mint program not connected.`
 - Never create, sign, simulate, submit, or confirm a transaction.
@@ -231,8 +231,8 @@ git commit -m "feat: add transaction-free solana wallet connection"
 - Create: `components/layout/security-label.tsx`
 - Create: `components/ui/reveal.tsx`
 - Create: `components/meters/glass-meter.tsx`
-- Create: `public/images/null-form-hero.png`
-- Create: `public/images/null-form-signal.png`
+- Create: `public/images/nth-object-hero.png`
+- Create: `public/images/nth-object-signal.png`
 
 **Interfaces:**
 - Consumes: `WalletControl`, `projectConfig`.
@@ -276,7 +276,7 @@ Clamp `value` to `0..100`, render semantic text outside the decorative calibrate
 
 - [ ] **Step 4: Build the global shell**
 
-Replace the old header with a sticky responsive header, full-screen mobile index, wallet control, network label, security line, and footer. Update metadata to NULL/FORM and remove the old background image from `body`.
+Replace the old header with a sticky responsive header, full-screen mobile index, wallet control, network label, security line, and footer. Update metadata to NTH/OBJECT and remove the old background image from `body`.
 
 - [ ] **Step 5: Verify shell and commit**
 
@@ -285,7 +285,7 @@ Run: `npm run lint`
 Expected: exit 0.
 
 ```powershell
-git add app/globals.css app/layout.tsx components public/images/null-form-hero.png public/images/null-form-signal.png
+git add app/globals.css app/layout.tsx components public/images/nth-object-hero.png public/images/nth-object-signal.png
 git commit -m "feat: create null form visual system"
 ```
 
@@ -373,7 +373,7 @@ Expected: FAIL because catalogue functions do not exist.
 
 - [ ] **Step 3: Add at least 24 complete typed objects**
 
-Map existing `/nft/slash_*.png` files to unique NULL/FORM names, traits, materials, structures, surfaces, states, backgrounds, and composition classes. Include the six named feature objects and avoid fabricated owner addresses.
+Map existing `/nft/slash_*.png` files to unique NTH/OBJECT names, traits, materials, structures, surfaces, states, backgrounds, and composition classes. Include the six named feature objects and avoid fabricated owner addresses.
 
 - [ ] **Step 4: Implement pure catalogue functions and verify GREEN**
 
@@ -503,7 +503,7 @@ git commit -m "feat: add studio roadmap and archive"
 
 - [ ] **Step 1: Add SEO and social metadata**
 
-Set canonical metadata, title template, description, Open Graph, Twitter card, and JSON-LD for a creative project without claiming a real deployed collection. Generate the Open Graph image with `ImageResponse` using the NULL/FORM wordmark and Glass Meter motif.
+Set canonical metadata, title template, description, Open Graph, Twitter card, and JSON-LD for a creative project without claiming a real deployed collection. Generate the Open Graph image with `ImageResponse` using the NTH/OBJECT wordmark and Glass Meter motif.
 
 - [ ] **Step 2: Add environment and operations guidance**
 
@@ -544,4 +544,3 @@ Start `npm run dev`. Inspect `/`, `/collection`, one object detail, `/mint`, `/s
 git add app/layout.tsx app/sitemap.ts app/robots.ts app/opengraph-image.tsx .env.example README.md
 git commit -m "docs: finish null form launch guidance"
 ```
-

@@ -5,10 +5,10 @@ import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://null-form.example"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://nth-object.example"),
   title: {
-    default: "NULL/FORM | Objects recorded on Solana",
-    template: "%s | NULL/FORM",
+    default: "NTH/OBJECT | Finite objects. Public state.",
+    template: "%s | NTH/OBJECT",
   },
   description: "A finite archive of designed digital objects with a transaction-free Solana wallet preview.",
 };
