@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { DisclosurePanel } from "@/components/archive/disclosure-panel";
 
 const ROLES = ["Creative Director", "3D Artist", "Solana Engineer", "Product Designer", "Community Lead"];
@@ -7,7 +7,7 @@ const ROLES = ["Creative Director", "3D Artist", "Solana Engineer", "Product Des
 export default function StudioPage() {
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <section className="studio-hero page-frame">
         <div>
           <p className="eyebrow">The Studio</p>

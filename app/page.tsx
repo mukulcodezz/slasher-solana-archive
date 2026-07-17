@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { CollectionThesis } from "@/components/sections/collection-thesis";
 import { FAQ } from "@/components/sections/faq";
 import { FeaturedObjects } from "@/components/sections/featured-objects";
@@ -14,7 +14,7 @@ import { UtilityBoard } from "@/components/sections/utility-board";
 export default function HomePage() {
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <Hero />
       <MintPreviewPanel />
       <CollectionThesis />

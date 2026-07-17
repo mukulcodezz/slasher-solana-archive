@@ -1,11 +1,11 @@
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { RoadmapInstrument } from "@/components/roadmap/roadmap-instrument";
 import { projectConfig } from "@/config/project";
 
 export default function RoadmapPage() {
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <section className="roadmap-hero page-frame">
         <p className="eyebrow">Operational sequence</p>
         <h1>Build what can be maintained.</h1>

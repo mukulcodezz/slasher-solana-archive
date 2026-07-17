@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { GlassMeter } from "@/components/meters/glass-meter";
 import { ObjectCard } from "@/components/objects/object-card";
 import { ObjectViewer } from "@/components/objects/object-viewer";
@@ -30,7 +30,7 @@ export default async function ObjectDetailPage({ params }: { params: Promise<{ s
 
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <div className="object-detail page-frame">
         <ObjectViewer image={object.image} name={object.name} />
         <aside className="object-detail__data">

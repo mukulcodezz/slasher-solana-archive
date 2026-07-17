@@ -1,12 +1,12 @@
 import { Suspense } from "react";
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { Catalogue } from "@/components/objects/catalogue";
 import { objects } from "@/data/objects";
 
 export default function CollectionPage() {
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <section className="collection-intro page-frame">
         <p className="eyebrow">Complete 42-piece register</p>
         <h1>Inspect the collection.</h1>

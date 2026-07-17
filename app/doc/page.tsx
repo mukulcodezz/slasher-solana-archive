@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { ArchiveNavigation } from "@/components/archive/archive-navigation";
 
 const DOCUMENTS = [
@@ -57,7 +57,7 @@ const DOCUMENTS = [
 export default function ArchivePage() {
   return (
     <main className="page-shell">
-      <Header />
+      <SiteHeader />
       <section className="archive-hero page-frame">
         <p className="eyebrow">Public documentation</p>
         <h1>The project should be inspectable before the objects are.</h1>
