@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   },
   description: "A finite archive of 42 diagonal mark studies with a transaction-free Solana wallet preview.",
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "SLASHER | One mark. Forty-two states.",
     description: "A finite archive of 42 diagonal mark studies with a transaction-free Solana wallet preview.",
