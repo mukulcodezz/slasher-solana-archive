@@ -11,21 +11,21 @@ export default function StudioPage() {
       <section className="studio-hero page-frame">
         <div>
           <p className="eyebrow">The Studio</p>
-          <h1>Objects begin as systems.</h1>
-          <p>Form, material, surface, and anomaly are calibrated before an object enters the collection.</p>
+          <h1>A mark becomes a system.</h1>
+          <p>Angle, count, grid, surface, and contrast are calibrated before a slash enters the collection.</p>
         </div>
         <div className="studio-hero__image">
-          <Image alt="A collection of industrial sculpture studies on a dark stage" fill priority sizes="(max-width: 768px) 100vw, 60vw" src="/images/nth-object-signal.png" />
+          <Image alt="SLASHER campaign banner with layered diagonal marks" fill priority sizes="(max-width: 768px) 100vw, 60vw" src="/images/slasher-banner.png" />
         </div>
       </section>
 
       <section className="studio-process page-frame reveal">
-        <h2>From controlled rules to individual state.</h2>
+        <h2>From one gesture to 42 states.</h2>
         <div>
-          <article><strong>Structure</strong><p>Each object starts with a load, frame, void, fold, vessel, or orbit.</p></article>
-          <article><strong>Material</strong><p>Ceramic, carbon, glass, chrome, paper, and unknown systems define physical logic.</p></article>
-          <article><strong>Deviation</strong><p>Controlled anomalies move an object beyond the foundational class.</p></article>
-          <article><strong>Registration</strong><p>A final object receives identity, metadata, and public provenance on Solana.</p></article>
+          <article><strong>Gesture</strong><p>Every piece begins with the same uncompromising diagonal cut.</p></article>
+          <article><strong>System</strong><p>Single and double marks establish the collection&apos;s core rhythm.</p></article>
+          <article><strong>Surface</strong><p>Grid, mosaic, blueprint, type, plastic, and wood treatments create deviation.</p></article>
+          <article><strong>Registration</strong><p>A final slash receives its own index, traits, and future provenance on Solana.</p></article>
         </div>
       </section>
 

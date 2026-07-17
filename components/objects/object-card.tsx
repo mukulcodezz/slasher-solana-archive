@@ -7,7 +7,7 @@ export function ObjectCard({ object, mode = "grid" }: { object: NftObject; mode?
     <Link className={`object-card object-card--${mode} object-card--${object.composition}`} href={`/collection/${object.slug}`}>
       <div className="object-card__media">
         <Image
-          alt={`${object.name}, a ${object.material.toLowerCase()} ${object.structure.toLowerCase()} from NTH/OBJECT`}
+          alt={`${object.name}, a ${object.theme.toLowerCase()} ${object.slashCount.toLowerCase()} mark from SLASHER`}
           fill
           sizes={mode === "list" ? "240px" : "(max-width: 768px) 100vw, 33vw"}
           src={object.image}
@@ -20,9 +20,9 @@ export function ObjectCard({ object, mode = "grid" }: { object: NftObject; mode?
         </div>
         <p>{object.description}</p>
         <dl>
-          <div><dt>Class</dt><dd>{object.rarity}</dd></div>
-          <div><dt>Material</dt><dd>{object.material}</dd></div>
-          <div><dt>State</dt><dd>{object.state}</dd></div>
+          <div><dt>Rarity</dt><dd>{object.rarity}</dd></div>
+          <div><dt>Mark</dt><dd>{object.slashCount}</dd></div>
+          <div><dt>Theme</dt><dd>{object.theme}</dd></div>
           <div><dt>Value</dt><dd>{object.priceSol ? `${object.priceSol} SOL` : "Not listed"}</dd></div>
         </dl>
       </div>

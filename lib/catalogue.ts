@@ -1,26 +1,25 @@
 import type {
   NftObject,
-  ObjectMaterial,
-  ObjectState,
-  ObjectStructure,
   RarityClass,
+  SlashCount,
+  SlashSeries,
+  SlashTheme,
 } from "@/types/project";
 
 export interface CatalogueFilters {
   search?: string;
   rarities?: RarityClass[];
-  materials?: ObjectMaterial[];
-  structures?: ObjectStructure[];
-  states?: ObjectState[];
+  slashCounts?: SlashCount[];
+  themes?: SlashTheme[];
+  series?: SlashSeries[];
 }
 
 export type CatalogueSort = "token-asc" | "token-desc" | "rarity" | "price-asc";
 
 const RARITY_ORDER: Record<RarityClass, number> = {
-  Standard: 0,
-  Distorted: 1,
-  Prototype: 2,
-  Null: 3,
+  Common: 0,
+  Rare: 1,
+  Legendary: 2,
 };
 
 function includesValue<T>(selected: readonly T[] | undefined, value: T): boolean {
@@ -30,12 +29,12 @@ function includesValue<T>(selected: readonly T[] | undefined, value: T): boolean
 export function filterObjects(objects: readonly NftObject[], filters: CatalogueFilters): NftObject[] {
   const search = filters.search?.trim().toLowerCase() ?? "";
   return objects.filter((object) => {
-    const searchable = `${object.name} ${object.id} ${object.structure} ${object.material}`.toLowerCase();
+    const searchable = `${object.name} ${object.id} ${object.rarity} ${object.slashCount} ${object.theme} ${object.series}`.toLowerCase();
     return (!search || searchable.includes(search))
       && includesValue(filters.rarities, object.rarity)
-      && includesValue(filters.materials, object.material)
-      && includesValue(filters.structures, object.structure)
-      && includesValue(filters.states, object.state);
+      && includesValue(filters.slashCounts, object.slashCount)
+      && includesValue(filters.themes, object.theme)
+      && includesValue(filters.series, object.series);
   });
 }
 

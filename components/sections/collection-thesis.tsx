@@ -8,8 +8,8 @@ export function CollectionThesis() {
   return (
     <section className="thesis page-frame reveal">
       <div className="thesis__statement">
-        <h2>Designed objects, not profile pictures.</h2>
-        <p>NTH/OBJECT treats every asset as a manufactured form. Structures, materials, surfaces, and anomalies belong to one controlled visual system.</p>
+        <h2>One mark. No repeated outcome.</h2>
+        <p>SLASHER reduces the collection to a single diagonal gesture, then tests how far grid, surface, light, and doubling can transform it.</p>
       </div>
       <div className="thesis__principles">
         {PRINCIPLES.map((principle) => (

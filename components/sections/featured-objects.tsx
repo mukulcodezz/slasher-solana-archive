@@ -6,7 +6,7 @@ export function FeaturedObjects() {
   return (
     <section className="featured page-frame reveal">
       <div className="featured__heading">
-        <h2>Selected objects</h2>
+        <h2>Selected slashes</h2>
         <Link className="text-action" href="/collection">View complete catalogue</Link>
       </div>
       <div className="featured__grid">

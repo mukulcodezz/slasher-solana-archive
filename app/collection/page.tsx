@@ -8,9 +8,9 @@ export default function CollectionPage() {
     <main className="page-shell">
       <Header />
       <section className="collection-intro page-frame">
-        <p className="eyebrow">Complete object register</p>
+        <p className="eyebrow">Complete 42-piece register</p>
         <h1>Inspect the collection.</h1>
-        <p>Filter by material, structure, class, or recorded state. All ownership and pricing values are sample interface data.</p>
+        <p>Every supplied Slasher artwork is here. Filter by rarity, slash count, theme, or visual series.</p>
       </section>
       <Suspense fallback={<CatalogueSkeleton />}>
         <Catalogue objects={objects} />

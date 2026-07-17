@@ -5,8 +5,8 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer__lead">
-        <Link className="wordmark wordmark--footer" href="/">NTH<span>/</span>OBJECT</Link>
-        <p>A finite archive of designed digital objects.</p>
+        <Link className="wordmark wordmark--footer" href="/">SLASHER</Link>
+        <p>A finite archive of 42 diagonal marks.</p>
       </div>
       <div className="site-footer__grid">
         <div>
@@ -35,7 +35,7 @@ export function SiteFooter() {
       </div>
       <div className="site-footer__warning">
         <span>Always verify the official collection address before signing a transaction.</span>
-        <span>© 2026 NTH/OBJECT</span>
+        <span>© 2026 SLASHER</span>
       </div>
     </footer>
   );

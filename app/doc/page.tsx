@@ -6,8 +6,8 @@ const DOCUMENTS = [
     id: "project",
     title: "Project",
     items: [
-      ["Collection overview", "NTH/OBJECT is a proposed archive of 3,333 designed digital sculptures across four object classes."],
-      ["Art system", "Objects are assembled from controlled structures, materials, surfaces, backgrounds, and deviations."],
+      ["Collection overview", "SLASHER is a finite archive of 42 diagonal mark studies across three rarity levels."],
+      ["Art system", "Slashes are organized by count, light or dark theme, series, and controlled surface treatment."],
       ["Trait framework", "Traits describe the visible object system. They do not imply market value."],
       ["Provenance", "Official collection provenance is unavailable until production addresses and metadata are published."],
     ],

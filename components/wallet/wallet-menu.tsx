@@ -97,7 +97,7 @@ export function WalletMenu({
       )}
 
       {errorMessage ? <p className="wallet-menu__error" role="alert">{errorMessage}</p> : null}
-      <p className="wallet-menu__security">NTH/OBJECT will never request your seed phrase.</p>
+      <p className="wallet-menu__security">SLASHER will never request your seed phrase.</p>
     </div>
   );
 }

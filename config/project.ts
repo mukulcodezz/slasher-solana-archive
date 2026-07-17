@@ -1,12 +1,12 @@
 import type { ProjectConfig } from "@/types/project";
 
 export const projectConfig: ProjectConfig = {
-  name: "NTH/OBJECT",
-  tagline: "Finite objects. Public state.",
-  description: "A finite archive of designed digital objects, registered as inspectable Solana assets.",
-  supply: Number(process.env.NEXT_PUBLIC_TOTAL_SUPPLY ?? 3333),
-  priceSol: Number(process.env.NEXT_PUBLIC_MINT_PRICE_SOL ?? 1.25),
-  maxMint: 3,
+  name: "SLASHER",
+  tagline: "One mark. Forty-two states.",
+  description: "A finite archive of 42 diagonal mark studies designed for Solana.",
+  supply: Number(process.env.NEXT_PUBLIC_TOTAL_SUPPLY ?? 42),
+  priceSol: Number(process.env.NEXT_PUBLIC_MINT_PRICE_SOL ?? 0.05),
+  maxMint: 5,
   cluster: process.env.NEXT_PUBLIC_SOLANA_NETWORK === "mainnet-beta" ? "mainnet-beta" : "devnet",
   rpcUrl: process.env.NEXT_PUBLIC_SOLANA_RPC_URL ?? "https://api.devnet.solana.com",
   collectionAddress: process.env.NEXT_PUBLIC_COLLECTION_ADDRESS ?? "",
@@ -22,10 +22,10 @@ export const projectConfig: ProjectConfig = {
   roadmap: [
     {
       code: "CALIBRATION",
-      title: "Finalize the object system",
+      title: "Finalize the slash system",
       status: "Active",
       progress: 72,
-      items: ["Complete art direction", "Test wallet surfaces", "Document collection structure"],
+      items: ["Complete art direction", "Test wallet surfaces", "Document all 42 marks"],
     },
     {
       code: "REGISTRATION",
@@ -57,7 +57,7 @@ export const projectConfig: ProjectConfig = {
     },
   ],
   utilities: [
-    { name: "Object Lab", summary: "Vote on materials, structures, and controlled visual experiments.", availability: "Planned" },
+    { name: "Slash Lab", summary: "Vote on surfaces, compositions, and controlled visual experiments.", availability: "Planned" },
     { name: "Private Archive", summary: "Access high-resolution art, studies, wallpapers, and process files.", availability: "Planned" },
     { name: "Form Claims", summary: "Receive optional digital posters, editions, and companion objects.", availability: "Concept" },
     { name: "Evolution Events", summary: "Choose announced metadata or visual upgrades for selected objects.", availability: "Research" },

@@ -6,9 +6,9 @@ export function Hero() {
   return (
     <section className="hero page-frame">
       <div className="hero__copy">
-        <p className="eyebrow">Solana object archive</p>
-        <h1>NTH/<br />OBJECT</h1>
-        <p>Finite digital sculptures with inspectable identity, material, and public state.</p>
+        <p className="eyebrow">42 marks on Solana</p>
+        <h1>SLASHER</h1>
+        <p>One diagonal gesture, cut into 42 distinct states of light, grid, texture, and distortion.</p>
         <div className="hero__actions">
           <Link className="primary-action" href="/collection">Enter collection</Link>
           <Link className="secondary-action" href="/mint">Preview mint</Link>
@@ -16,14 +16,14 @@ export function Hero() {
       </div>
       <div className="hero__visual">
         <Image
-          alt="A folded black carbon, ceramic, and smoked glass sculpture"
+          alt="SLASHER campaign banner featuring layered diagonal marks"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 66vw"
-          src="/images/nth-object-hero.png"
+          src="/images/slasher-banner.png"
         />
         <div className="hero__meter">
-          <GlassMeter display="3,333" label="Finite supply" tone="signal" value={68} />
+          <GlassMeter display="42" label="Finite supply" tone="signal" value={82} />
         </div>
       </div>
     </section>

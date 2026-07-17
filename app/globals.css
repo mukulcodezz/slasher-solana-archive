@@ -654,7 +654,7 @@ summary:focus-visible {
 
 .hero__copy h1 {
   margin: auto 0 28px;
-  font-size: clamp(4.4rem, 9vw, 9rem);
+  font-size: clamp(3.8rem, 6.4vw, 7rem);
   font-weight: 700;
   line-height: .72;
   letter-spacing: -.085em;
@@ -683,7 +683,7 @@ summary:focus-visible {
 .hero__visual > img {
   object-fit: cover;
   object-position: 58% center;
-  filter: saturate(.08) contrast(1.02);
+  filter: saturate(.72) contrast(1.04);
   animation: hero-image-in 1.2s var(--ease-out) both;
 }
 
@@ -2030,35 +2030,34 @@ summary:focus-visible {
 }
 
 .object-card__media img {
-  object-fit: cover;
-  filter: saturate(.05) contrast(1.04);
+  object-fit: contain;
+  filter: saturate(.82) contrast(1.02);
   transition: transform .7s var(--ease-out), filter .5s ease;
 }
 
 .object-card--contained .object-card__media img {
   object-fit: contain;
-  padding: 8%;
 }
 
 .object-card--cropped .object-card__media img {
-  transform: scale(1.08);
+  transform: none;
 }
 
 .object-card--offset .object-card__media img {
-  object-position: 68% center;
+  object-position: center;
 }
 
 .object-card--mirrored .object-card__media img {
-  transform: scaleX(-1);
+  transform: none;
 }
 
 .object-card:hover .object-card__media img {
-  transform: scale(1.035);
-  filter: saturate(.18) contrast(1.08);
+  transform: scale(1.018);
+  filter: saturate(1) contrast(1.04);
 }
 
 .object-card--mirrored:hover .object-card__media img {
-  transform: scaleX(-1) scale(1.035);
+  transform: scale(1.018);
 }
 
 .object-card__body {

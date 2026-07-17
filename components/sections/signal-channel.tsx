@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const FEED = [
   { type: "Development log", date: "17 JUL 2026", text: "Wallet Standard discovery connected to the interface layer." },
-  { type: "Archive update", date: "12 JUL 2026", text: "Object classes and material definitions entered calibration." },
+  { type: "Archive update", date: "12 JUL 2026", text: "All 42 original Slasher artworks entered the collection index." },
   { type: "Release alert", date: "PENDING", text: "Official public channels are not configured." },
 ];
 
 export function SignalChannel() {
   return (
     <section className="signal-channel reveal">
-      <Image alt="Five industrial sculptures arranged on a dark museum stage" fill sizes="100vw" src="/images/nth-object-signal.png" />
+      <Image alt="Layered diagonal SLASHER marks across a technical grid" fill sizes="100vw" src="/images/slasher-banner.png" />
       <div className="signal-channel__veil" />
       <div className="signal-channel__content page-frame">
         <p className="eyebrow">Signal channel</p>

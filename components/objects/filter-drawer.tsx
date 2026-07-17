@@ -1,10 +1,10 @@
-import type { ObjectMaterial, ObjectState, ObjectStructure, RarityClass } from "@/types/project";
+import type { RarityClass, SlashCount, SlashSeries, SlashTheme } from "@/types/project";
 
 export interface FilterSelection {
   rarities: RarityClass[];
-  materials: ObjectMaterial[];
-  structures: ObjectStructure[];
-  states: ObjectState[];
+  slashCounts: SlashCount[];
+  themes: SlashTheme[];
+  series: SlashSeries[];
 }
 
 interface FilterDrawerProps extends FilterSelection {
@@ -14,17 +14,17 @@ interface FilterDrawerProps extends FilterSelection {
 }
 
 const FILTERS = {
-  rarities: ["Standard", "Distorted", "Prototype", "Null"],
-  structures: ["Monolith", "Vessel", "Frame", "Fold", "Orbital", "Fragment"],
-  materials: ["Ceramic", "Carbon", "Glass", "Chrome", "Paper", "Unknown"],
-  states: ["Unminted", "Owned", "Listed", "Evolving", "Locked"],
+  rarities: ["Legendary", "Rare", "Common"],
+  slashCounts: ["Single", "Double"],
+  themes: ["Light", "Dark"],
+  series: ["Arthouse", "Car", "Cubanoid", "Font", "Plastic", "Wood", "Blueprint", "Classwork", "Mosaic", "Core"],
 } as const;
 
 export function FilterDrawer({ isOpen, onClose, onToggle, ...selection }: FilterDrawerProps) {
   return (
     <aside className={`filter-drawer ${isOpen ? "filter-drawer--open" : ""}`} aria-label="Collection filters">
       <div className="filter-drawer__heading">
-        <strong>Object filters</strong>
+        <strong>Slash filters</strong>
         <button onClick={onClose} type="button">Close</button>
       </div>
       {(Object.keys(FILTERS) as Array<keyof FilterSelection>).map((group) => (

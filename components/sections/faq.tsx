@@ -1,9 +1,9 @@
 const FAQS = [
-  ["What is NTH/OBJECT?", "A fictional collection and product-design prototype for finite digital sculptures on Solana."],
+  ["What is SLASHER?", "A finite collection of 42 diagonal mark studies presented through a Solana-native product experience."],
   ["Which blockchain is used?", "The interface is designed around Solana and currently configured for devnet wallet connection."],
-  ["What is the total supply?", "The proposed supply is 3,333 objects across four classes."],
+  ["What is the total supply?", "The collection contains 42 artworks across Legendary, Rare, and Common rarity levels."],
   ["Which wallets are supported?", "Installed Wallet Standard wallets such as Phantom, Solflare, and Backpack can be discovered."],
-  ["How much does minting cost?", "The interface displays a configurable preview price of 1.25 SOL. No real mint is connected."],
+  ["How much does minting cost?", "The preview starts at 0.05 SOL, matching the supplied collection data. No real mint is connected."],
   ["Is every object unique?", "Each sample object has a unique token identity, composition, and trait combination."],
   ["Where can I verify the collection?", "Verification is unavailable until official collection and program addresses are configured."],
   ["What rights do holders receive?", "A final holder license requires qualified legal review before launch."],

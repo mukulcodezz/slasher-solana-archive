@@ -1,20 +1,20 @@
 import { GlassMeter } from "@/components/meters/glass-meter";
 
 const CLASSES = [
-  { name: "Standard", count: 2400, value: 72, text: "Foundational forms with restrained materials and stable geometries." },
-  { name: "Distorted", count: 700, value: 42, text: "Objects affected by unusual structural deformation." },
-  { name: "Prototype", count: 200, value: 24, text: "Experimental forms containing rare manufacturing systems." },
-  { name: "Null", count: 33, value: 7, text: "Scarce exceptions that break the collection's normal visual rules." },
+  { name: "Legendary", count: 6, value: 100, text: "Six singular material studies, each with its own visual construction." },
+  { name: "Rare", count: 12, value: 72, text: "Blueprint, Classwork, and Mosaic systems across light and dark states." },
+  { name: "Common", count: 24, value: 42, text: "The core grammar: single or double marks, cut in light or darkness." },
+  { name: "Total", count: 42, value: 82, text: "A complete, finite visual index with every supplied artwork represented." },
 ];
 
 export function ObjectClasses() {
   return (
     <section className="object-classes page-frame reveal">
-      <h2 className="section-title">Four levels of structural deviation.</h2>
+      <h2 className="section-title">Three rarities. One visual grammar.</h2>
       <div className="object-classes__grid">
         {CLASSES.map((item, index) => (
           <article className={`object-class object-class--${index + 1}`} key={item.name}>
-            <GlassMeter display={item.count.toLocaleString()} label={item.name} tone={item.name === "Null" ? "signal" : "ink"} value={item.value} />
+            <GlassMeter display={item.count.toLocaleString()} label={item.name} tone={item.name === "Legendary" ? "signal" : "ink"} value={item.value} />
             <p>{item.text}</p>
           </article>
         ))}

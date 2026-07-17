@@ -1,10 +1,8 @@
-export type RarityClass = "Standard" | "Distorted" | "Prototype" | "Null";
-export type ObjectState = "Unminted" | "Owned" | "Listed" | "Evolving" | "Locked";
+export type RarityClass = "Common" | "Rare" | "Legendary";
+export type SlashCount = "Single" | "Double";
+export type SlashTheme = "Light" | "Dark";
+export type SlashSeries = "Arthouse" | "Car" | "Cubanoid" | "Font" | "Plastic" | "Wood" | "Blueprint" | "Classwork" | "Mosaic" | "Core";
 export type SolanaCluster = "devnet" | "mainnet-beta";
-export type ObjectStructure = "Monolith" | "Vessel" | "Frame" | "Fold" | "Orbital" | "Fragment";
-export type ObjectMaterial = "Ceramic" | "Carbon" | "Glass" | "Chrome" | "Paper" | "Unknown";
-export type ObjectSurface = "Matte" | "Polished" | "Weathered" | "Translucent" | "Burned" | "Reflective";
-export type ObjectBackground = "Off-white" | "Black" | "Neutral" | "Void";
 export type MintPreviewStatus =
   | "ready"
   | "wallet-required"
@@ -28,11 +26,9 @@ export interface NftObject {
   name: string;
   image: string;
   rarity: RarityClass;
-  structure: ObjectStructure;
-  material: ObjectMaterial;
-  surface: ObjectSurface;
-  state: ObjectState;
-  background: ObjectBackground;
+  slashCount: SlashCount;
+  theme: SlashTheme;
+  series: SlashSeries;
   traits: NftTrait[];
   priceSol?: number;
   description: string;

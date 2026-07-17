@@ -9,9 +9,9 @@ import { ObjectCard } from "./object-card";
 
 const EMPTY_FILTERS: FilterSelection = {
   rarities: [],
-  materials: [],
-  structures: [],
-  states: [],
+  slashCounts: [],
+  themes: [],
+  series: [],
 };
 
 export function Catalogue({ objects }: { objects: NftObject[] }) {
@@ -57,13 +57,13 @@ export function Catalogue({ objects }: { objects: NftObject[] }) {
       <div className="catalogue-main">
         <div className="catalogue-controls">
           <label>
-            <span>Search objects</span>
+            <span>Search collection</span>
             <input
               onChange={(event) => {
                 setSearch(event.target.value);
                 syncQuery({ q: event.target.value });
               }}
-              placeholder="Name, token, material"
+              placeholder="Name, token, series"
               type="search"
               value={search}
             />
@@ -103,7 +103,7 @@ export function Catalogue({ objects }: { objects: NftObject[] }) {
         </div>
 
         <div className="active-filters">
-          <span>{visibleObjects.length} objects</span>
+          <span>{visibleObjects.length} slashes</span>
           {activeFilters.map((filter) => <span key={filter}>{filter}</span>)}
           {activeFilters.length ? (
             <button onClick={() => setFilters(EMPTY_FILTERS)} type="button">Clear all</button>
@@ -116,8 +116,8 @@ export function Catalogue({ objects }: { objects: NftObject[] }) {
           </div>
         ) : (
           <div className="catalogue-empty">
-            <strong>No object matches this inspection.</strong>
-            <p>Remove filters or search for another material, structure, or token.</p>
+            <strong>No slash matches this inspection.</strong>
+            <p>Remove filters or search for another series, theme, or token.</p>
             <button onClick={() => { setFilters(EMPTY_FILTERS); setSearch(""); syncQuery({ q: "" }); }} type="button">
               Reset inspection
             </button>

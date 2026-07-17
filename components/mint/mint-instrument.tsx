@@ -19,9 +19,9 @@ export function MintInstrument() {
   return (
     <div className="mint-instrument">
       <div className="mint-instrument__art">
-        <Image alt="NTH/OBJECT registration preview sculpture" fill priority sizes="(max-width: 768px) 100vw, 50vw" src="/images/nth-object-hero.png" />
+        <Image alt="SLASHER registration preview artwork" fill priority sizes="(max-width: 768px) 100vw, 50vw" src="/nft/slash_001.png" />
         <div className="mint-instrument__art-meter">
-          <GlassMeter display="3,333" label="Total supply" tone="signal" value={68} />
+          <GlassMeter display="42" label="Total supply" tone="signal" value={82} />
         </div>
       </div>
 

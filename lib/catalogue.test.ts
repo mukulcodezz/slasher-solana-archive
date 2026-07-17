@@ -5,71 +5,66 @@ import { filterObjects, sortObjects } from "./catalogue";
 const sample: NftObject[] = [
   {
     id: 3,
-    slug: "null-vessel",
-    name: "Null Vessel",
+    slug: "blueprint-slash-003",
+    name: "Blueprint Slash",
     image: "/nft/slash_003.png",
-    rarity: "Null",
-    structure: "Vessel",
-    material: "Glass",
-    surface: "Translucent",
-    state: "Listed",
-    background: "Void",
+    rarity: "Rare",
+    slashCount: "Single",
+    theme: "Dark",
+    series: "Blueprint",
     traits: [],
-    priceSol: 8.4,
-    description: "A vessel with an interrupted surface.",
+    priceSol: 0.1,
+    description: "A single dark Blueprint edition.",
     composition: "contained",
   },
   {
     id: 1,
-    slug: "paper-frame",
-    name: "Paper Frame",
+    slug: "arthouse-slash-001",
+    name: "Arthouse Slash",
     image: "/nft/slash_001.png",
-    rarity: "Standard",
-    structure: "Frame",
-    material: "Paper",
-    surface: "Matte",
-    state: "Owned",
-    background: "Off-white",
+    rarity: "Legendary",
+    slashCount: "Single",
+    theme: "Dark",
+    series: "Arthouse",
     traits: [],
-    description: "A stable frame.",
-    composition: "offset",
+    priceSol: 0.15,
+    description: "The holographic Arthouse edition.",
+    composition: "cropped",
   },
   {
-    id: 2,
-    slug: "carbon-fold",
-    name: "Carbon Fold",
-    image: "/nft/slash_002.png",
-    rarity: "Prototype",
-    structure: "Fold",
-    material: "Carbon",
-    surface: "Burned",
-    state: "Evolving",
-    background: "Black",
+    id: 50,
+    slug: "light-double-slash-050",
+    name: "Light Double Slash 1",
+    image: "/nft/slash_050.png",
+    rarity: "Common",
+    slashCount: "Double",
+    theme: "Light",
+    series: "Core",
     traits: [],
-    priceSol: 3.1,
-    description: "A folded carbon sheet.",
-    composition: "cropped",
+    priceSol: 0.05,
+    description: "A double light Core edition.",
+    composition: "offset",
   },
 ];
 
 describe("filterObjects", () => {
   it("combines search and rarity filters", () => {
-    expect(filterObjects(sample, { search: "vessel", rarities: ["Null"] })).toHaveLength(1);
+    expect(filterObjects(sample, { search: "blueprint", rarities: ["Rare"] })).toHaveLength(1);
   });
 
-  it("matches material and state", () => {
-    expect(filterObjects(sample, { materials: ["Carbon"], states: ["Evolving"] })[0].id).toBe(2);
+  it("matches slash count and theme", () => {
+    expect(filterObjects(sample, { slashCounts: ["Double"], themes: ["Light"] })[0].id).toBe(50);
   });
 });
 
 describe("sortObjects", () => {
   it("sorts by token id without mutating input", () => {
     const original = [...sample];
-    expect(sortObjects(sample, "token-desc")[0].id).toBe(3);
+    expect(sortObjects(sample, "token-desc")[0].id).toBe(50);
     expect(sample).toEqual(original);
   });
 
-  it("places unlisted objects after listed objects for price sorting", () => {
-    expect(sortObjects(sample, "price-asc").map((object) => object.id)).toEqual([2, 3, 1]);
+  it("sorts Legendary before Rare and Common", () => {
+    expect(sortObjects(sample, "rarity").map((object) => object.rarity)).toEqual(["Legendary", "Rare", "Common"]);
   });
 });

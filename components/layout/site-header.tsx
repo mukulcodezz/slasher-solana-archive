@@ -20,8 +20,8 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link className="wordmark" href="/" aria-label="NTH/OBJECT home">
-          NTH<span>/</span>OBJECT
+        <Link className="wordmark" href="/" aria-label="SLASHER home">
+          SLASHER
         </Link>
 
         <nav aria-label="Primary navigation" className="site-header__nav">
@@ -59,7 +59,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <div className="mobile-navigation__meta">
-            <span>Finite objects. Public state.</span>
+            <span>One mark. Forty-two states.</span>
             <span>Preview environment</span>
           </div>
         </nav>

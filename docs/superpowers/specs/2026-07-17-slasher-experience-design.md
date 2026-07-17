@@ -1,10 +1,10 @@
-# NTH/OBJECT Experience Design
+# SLASHER Experience Design
 
 ## Product definition
 
-NTH/OBJECT is a fictional Solana-native digital sculpture collection presented as a working design archive rather than an NFT sales template. This release rebuilds the existing project into a premium, responsive experience with a real Wallet Standard connect/disconnect flow and an explicitly simulated mint instrument. It never creates, signs, submits, or confirms a transaction.
+SLASHER is a finite Solana-native collection of 42 original diagonal-mark artworks, presented as a working design archive rather than an NFT sales template. This release rebuilds the existing project into a premium, responsive experience with a real Wallet Standard connect/disconnect flow and an explicitly simulated mint instrument. It never creates, signs, submits, or confirms a transaction.
 
-The product name is **NTH/OBJECT**. Its tagline is **Finite objects. Public state.** The voice is concise, technical, and art-directed: fabrication, registration, material, state, provenance, signal, and archive.
+The product name is **SLASHER**. Its tagline is **One mark. Forty-two states.** The voice is concise, technical, and art-directed: gesture, registration, surface, state, provenance, signal, and archive.
 
 ## Scope
 
@@ -45,13 +45,13 @@ Artwork consists of monochrome conceptual industrial sculptures—folded masses,
 
 ### Global shell
 
-The sticky header contains the NTH/OBJECT wordmark, primary navigation, a network label, and wallet control. Mobile navigation opens as a full-height editorial index. A persistent, unobtrusive security line states: “NTH/OBJECT will never request your seed phrase.”
+The sticky header contains the SLASHER wordmark, primary navigation, a network label, and wallet control. Mobile navigation opens as a full-height editorial index. A persistent, unobtrusive security line states: “SLASHER will never request your seed phrase.”
 
 The footer includes official-channel placeholders clearly marked as unconfigured, a demo collection address, legal-document links, status, network, and the warning: “Always verify the official collection address before signing a transaction.”
 
 ### Homepage
 
-1. **Hero / Registration field** — large animated NTH/OBJECT typography, a signature sculpture, rotating technical microcopy, and primary actions for the collection and wallet connection.
+1. **Hero / Registration field** — large animated SLASHER typography, the generated collection banner, rotating technical microcopy, and primary actions for the collection and wallet connection.
 2. **Mint instrument** — supply, price, quantity, wallet status, and lifecycle preview. The main action displays “Preview mint” and ends with “Preview mode — mint program not connected.”
 3. **Collection thesis** — asymmetric editorial copy and the principles Finite, Verifiable, and Evolving.
 4. **Object classes** — Standard, Distorted, Prototype, and Null represented through distinct meters and silhouettes.
@@ -157,4 +157,4 @@ Completion requires:
 
 ## Success criteria
 
-The project feels like a collectible digital-design institution rather than an NFT template. NTH/OBJECT has one recognizable instrument language, varied original artwork presentation, deliberate editorial rhythm, safe wallet connection, honest demo minting, and a clean path for later production integrations. It runs with `npm install`, `npm run dev`, and `npm run build`.
+The project feels like a collectible digital-design institution rather than an NFT template. SLASHER has one recognizable instrument language, all 42 original artworks, deliberate editorial rhythm, safe wallet connection, honest demo minting, and a clean path for later production integrations. It runs with `npm install`, `npm run dev`, and `npm run build`.
